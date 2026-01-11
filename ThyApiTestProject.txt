@@ -1,0 +1,57 @@
+# QA Engineer - API Automation Case Study (Playwright Edition)
+
+## Görev
+TypeScript ve Playwright kullanarak API test otomasyonu projesi oluşturulması bekleniyor. Kodlama standartlarına ve pratiklerine dikkat edilmeli ve kod tekrarı yapılmamalı.
+
+## Test Edilecek API
+**Base URL:** https://dummyjson.com  
+**Documentation:** https://dummyjson.com/docs
+
+**Test Credentials:**
+```
+Username: emilys
+Password: emilyspass
+```
+
+**Not:** DummyJSON tamamen ücretsiz ve public bir REST API'dir. Authentication, CRUD ve array response'ları destekler.
+
+## Beklenenler
+
+### 1. Test Senaryoları 
+
+**User CRUD**
+- Kullanıcı listeleme (pagination ile)
+- Tekil kullanıcı sorgulama
+- Kullanıcı oluşturma (Tüm negative senaryolarla birlikte testler yazılmalı)
+- Kullanıcı güncelleme (PUT ve PATCH)
+- Kullanıcı silme (DELETE)
+
+**Authentication & Authorization**
+- Login flow validasyonu
+
+**Array Response Validasyonu**
+- JSON array dönen endpoint'ten (örn: GET /users) belirli bir veriyi çekme ve doğrulama testi
+
+### 2. Test Grupları
+Playwright test annotations ile gruplandırma:
+- **@smoke:** Kritik API testleri
+- **@regression:** Tüm testler
+
+### 3. Design Patterns
+Framework'ünüzde design pattern kullanımı beklenmektedir (Singleton, Factory, Builder vb.)
+
+### 4. TestContainers aracılığıyla PostgreSQL Entegrasyonu
+TestContainers ile test altyapısında PostgreSQL ayağa kaldırın ve aşağıdaki işlevleri implement edin:
+- API request ve response'ları database'e kaydetme
+
+**Database Connection:**
+property dosyasından configürasyon bilgilerini okusun. Fakat pipeline'a dönük olarak ortam değişkeniyle ezilebilsin. (DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD)
+
+**Not:** Test projesi koşulurken schema yoksa otomatik olarak yaratsın, tablo yoksa yaratsın varsa kullansın. Schema tasarımı size kalmış. 
+
+## Teslim
+- GitHub repository (public veya invite ile erişilebilir)
+- README.md (detaylı setup ve architecture açıklaması)
+- Tüm testler başarıyla çalışmalı
+- Test execution video/screenshot (optional)
+- Playwright HTML report
