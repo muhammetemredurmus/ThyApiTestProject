@@ -246,7 +246,7 @@ await repository.logResponse(response);
 
 1. **Projeyi klonlayın:**
 ```bash
-git clone <repository-url>
+git clone https://github.com/muhammetemredurmus/ThyApiTestProject.git
 cd ThyApiCase
 ```
 
@@ -668,7 +668,7 @@ ISC
 
 ## Authors
 
-QA Engineer - API Automation Case Study
+Muhammet Emre Durmuş QA Engineer - API Automation Case Study
 
 ---
 
