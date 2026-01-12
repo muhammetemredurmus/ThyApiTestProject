@@ -23,7 +23,7 @@ TypeScript ve Playwright kullanılarak geliştirilmiş kapsamlı bir API test ot
 ## 📊 Test İstatistikleri
 
 - **Toplam Test:** 53 test
-- **Smoke Tests:** 4 kritik test
+- **Smoke Tests:** 8 kritik test
 - **Regression Tests:** 53 test (tümü)
 - **Test Durumu:** ✅ Tüm testler başarıyla geçiyor
 - **Test Coverage:** User CRUD, Authentication, Array Response Validation, Negative Scenarios

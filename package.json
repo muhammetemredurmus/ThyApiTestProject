@@ -27,10 +27,10 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@testcontainers/postgresql": "^10.7.0",
     "dotenv": "^16.3.1",
     "pg": "^8.11.3",
-    "testcontainers": "^10.7.0",
-    "@testcontainers/postgresql": "^10.7.0"
+    "playwright": "^1.57.0",
+    "testcontainers": "^10.7.0"
   }
 }
-

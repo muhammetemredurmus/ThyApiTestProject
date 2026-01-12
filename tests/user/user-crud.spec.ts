@@ -221,7 +221,7 @@ test.describe('User CRUD Operations', () => {
     expect(updatedUser.email).toBe(existingUser.email);
   });
 
-  test('@regression - Should delete a user', async ({ apiClientWithDb }) => {
+  test('@smoke @regression - Should delete a user', async ({ apiClientWithDb }) => {
     // Singleton Pattern: Config provides base URL configuration
     // Repository Pattern: DELETE request and response logged
     const userId = 1;
@@ -257,7 +257,7 @@ test.describe('User CRUD Operations', () => {
     expect(data2.skip).toBe(100);
   });
 
-  test('@regression - Should verify user data integrity after creation', async ({ apiClientWithDb }) => {
+  test('@smoke @regression - Should verify user data integrity after creation', async ({ apiClientWithDb }) => {
     // Builder Pattern: UserBuilder with fluent API for complete user creation
     // Factory Pattern: UserFactory internally uses Builder
     // Singleton Pattern: Config provides API credentials

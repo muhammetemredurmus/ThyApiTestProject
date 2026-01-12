@@ -28,7 +28,7 @@ test.describe('Authentication & Authorization', () => {
     expect(loginResponse.accessToken.length).toBeGreaterThan(0);
   });
 
-  test('@regression - Should get authentication token after login', async ({ authService }) => {
+  test('@smoke @regression - Should get authentication token after login', async ({ authService }) => {
     // Singleton Pattern: AuthService manages single token state
     // Token is stored in authService instance
     await authService.clearToken();

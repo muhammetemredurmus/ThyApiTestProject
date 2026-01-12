@@ -14,7 +14,7 @@ import { UserBuilder } from '../../src/builders/user.builder';
 
 test.describe('Array Response Validation', () => {
 
-  test('@regression - Should validate array response structure from GET /users', async ({ apiClientWithDb }) => {
+  test('@smoke @regression - Should validate array response structure from GET /users', async ({ apiClientWithDb }) => {
     // Singleton Pattern: apiClientWithDb uses Config.getInstance() for API URL
     // Repository Pattern: Array response logged to database for analysis
     const response = await apiClientWithDb.get('/users');
