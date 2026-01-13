@@ -494,13 +494,13 @@ Running 53 tests using 11 workers
 ```bash
 $ npm run test:smoke
 
-Running 4 tests using 4 workers
+Running 8 tests using 4 workers
 
   ok  1 [api-tests] › tests\auth\auth.spec.ts:5:7 › Authentication & Authorization › @smoke @regression
   ok  2 [api-tests] › tests\user\user-crud.spec.ts:8:7 › User CRUD Operations › @smoke @regression
   ...
   
-  4 passed (8.7s)
+  8 passed (8.8s)
 ```
 
 ## Troubleshooting
